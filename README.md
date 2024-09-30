@@ -1,4 +1,4 @@
-#Group 8:
+# Group 8: Movie Ratings and Reviews Management
 1. Vũ Minh Phong
 2. Trần Quốc Toản
 3. Nguyễn Đại Phát
