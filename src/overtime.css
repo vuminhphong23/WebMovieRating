@@ -1,0 +1,24 @@
+.select-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Khoảng cách giữa combobox và biểu đồ */
+  }
+  
+  .select-container label {
+    margin-right: 10px; /* Khoảng cách giữa label và combobox */
+  }
+  
+  .select-container select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+  }
+  
+  .select-container select:focus {
+    border-color: #222bb3; /* Màu viền khi chọn */
+    outline: none; /* Ẩn đường viền mặc định */
+  }
+
