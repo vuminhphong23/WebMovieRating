@@ -44,11 +44,12 @@ const Form = () => {
                 label="First Name"
                 onBlur={handleBlur}
                 onChange={handleChange}
-                value={values.firstName}
+                value={values.firstName || 'Vũ'}
                 name="firstName"
                 error={!!touched.firstName && !!errors.firstName}
                 helperText={touched.firstName && errors.firstName}
                 sx={{ gridColumn: "span 2" }}
+                
               />
               <TextField
                 fullWidth
@@ -57,7 +58,7 @@ const Form = () => {
                 label="Last Name"
                 onBlur={handleBlur}
                 onChange={handleChange}
-                value={values.lastName}
+                value={values.lastName || 'Phong'}
                 name="lastName"
                 error={!!touched.lastName && !!errors.lastName}
                 helperText={touched.lastName && errors.lastName}
@@ -70,7 +71,7 @@ const Form = () => {
                 label="Email"
                 onBlur={handleBlur}
                 onChange={handleChange}
-                value={values.email}
+                value={values.email || 'phong@gmail.com'}
                 name="email"
                 error={!!touched.email && !!errors.email}
                 helperText={touched.email && errors.email}
@@ -83,7 +84,7 @@ const Form = () => {
                 label="Contact Number"
                 onBlur={handleBlur}
                 onChange={handleChange}
-                value={values.contact}
+                value={values.contact || '0123456789'}
                 name="contact"
                 error={!!touched.contact && !!errors.contact}
                 helperText={touched.contact && errors.contact}
@@ -96,7 +97,7 @@ const Form = () => {
                 label="Address 1"
                 onBlur={handleBlur}
                 onChange={handleChange}
-                value={values.address1}
+                value={values.address1 || 'Hà Nội'}
                 name="address1"
                 error={!!touched.address1 && !!errors.address1}
                 helperText={touched.address1 && errors.address1}
@@ -109,7 +110,7 @@ const Form = () => {
                 label="Address 2"
                 onBlur={handleBlur}
                 onChange={handleChange}
-                value={values.address2}
+                value={values.address2 || 'Hà Đông'}
                 name="address2"
                 error={!!touched.address2 && !!errors.address2}
                 helperText={touched.address2 && errors.address2}
@@ -118,7 +119,7 @@ const Form = () => {
             </Box>
             <Box display="flex" justifyContent="end" mt="20px">
               <Button type="submit" color="secondary" variant="contained">
-                Create New User
+                Update
               </Button>
             </Box>
           </form>
